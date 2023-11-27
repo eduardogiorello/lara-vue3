@@ -3,9 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Model\Estudiante;
-use App\Model\Curso;
+
 use Illuminate\Database\Seeder;
+use App\Models\Estudiante;
+use App\Models\Curso;
 
 class DatabaseSeeder extends Seeder
 {
