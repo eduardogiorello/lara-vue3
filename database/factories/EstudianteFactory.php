@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Factories;
+use Illuminate\Support\Str;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -17,8 +18,8 @@ class EstudianteFactory extends Factory
     public function definition(): array
     {
         return [
-            'nombre' => $this->faker->name,
-            'apellido' => $this->faker->name,
+            'nombre' => $this->faker->name(),
+            'apellido' => $this->faker->lastName(),
             'foto' => Str::random(10)
             
         ];
